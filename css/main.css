@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    font-size: 1.3rem;
+    color: #ffffff;
+    background-color: #111827;
+    margin-top: 2rem;
+    padding: 0.5rem;
+}
+.container .name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 2rem;
+    padding: 1rem;
+}
+.head{
+    display: flex;
+    gap: 0.4rem;
+    height: 2rem;
+}
+.container .task-name input{
+    padding-left: 4px;
+    padding-right: 4px;
+    height: 100%;
+    font-size: 1.2rem;
+    font-weight: 600;
+    width: 100%;
+}
+.container .task-date input{
+    height: 100%;
+    font-size: 1rem;
+}
+.container .add_task button{
+    height: 100%;
+    width: 5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: green;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.container .add_task button:hover{
+    border: 1px solid #fff;
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+.details .details_list{
+    display: flex;
+    width: 100%;
+    gap: 0.4rem;
+}
+.details_list .list_name span,
+.details_list .list_date span{
+    font-size: 1.2rem;
+    font-weight: 600;
+    border: 2px solid #fff;
+}
+.details_list .delete_list button{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.details_list .list_name span{
+    display: flex;
+    flex-wrap: wrap;
+    word-wrap: break-word;
+    width: 17rem;
+}
+.list_date span{
+    display: flex;
+    flex-wrap: wrap;
+    word-wrap: break-word;
+    width: 7.5rem;
+}
+.delete_list button{
+    width: 5rem;
+    background-color: red;
+    border: none;
+    outline: none;
+}
+.delete_list button:hover{
+    border: 1px solid #fff;
+}
